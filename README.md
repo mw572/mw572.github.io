@@ -1,6 +1,6 @@
 # Github Pages Repository
 
-**Marcus Williamson**
+**By Marcus Williamson**
 
 ---
 ## Practical Machine Learning 
