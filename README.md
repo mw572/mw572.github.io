@@ -12,8 +12,17 @@ Click [here](https://mw572.github.io/Whitepaper Research/The Financial Press and
 
 ---
 
+## Kaggle Competitions
+
+### >> Titanic: Machine Learning from Disaster
+Click [here](https://www.kaggle.com/c/titanic) for a like to the competition on Kaggle.
+Click [here](https://github.com/mw572/Kaggle/tree/master/Titanic%20Survival%20Model) for a link to the repo.
+**Click [here](http://mw572.github.io/Kaggle/Titanic_Writeup.html) for my final writeup and submission!**
+
+---
+
 ### >> Practical Machine Learning 
 Click [here](https://mw572.github.io/PracticalMachineLearning/index.html) for link to project assignment writeup on Quantified Self Movement Data Analysis
 
----
+
 
