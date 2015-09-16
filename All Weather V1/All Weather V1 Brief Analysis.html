@@ -173,8 +173,36 @@
 <ul>
 <li>High <a href="https://en.wikipedia.org/wiki/Sharpe_ratio">Sharpe Ratio</a> - Deviation risk measure (Reward to variability)</li>
 <li>High <a href="https://en.wikipedia.org/wiki/Coefficient_of_determination">Stability</a> - R-squared of a linear fit to the returns</li>
-<li>High [Alpha](</li>
+<li>High <a href="https://en.wikipedia.org/wiki/Alpha_(finance)">Alpha</a> - Active return of investment</li>
+<li>High <a href="https://en.wikipedia.org/wiki/Calmar_ratio">Calmar Ratio</a> - Compound annual returns divided by Max Drawdowb</li>
+<li>High <a href="https://en.wikipedia.org/wiki/Sortino_ratio">Sortino Ratio</a> - Variation on Sharpe penilising downside volatility only</li>
+<li>High <a href="https://en.wikipedia.org/wiki/Omega_ratio">Omega Ratio</a> - Probabilty weighted ratio of returns vs losses</li>
+<li>Low <a href="https://en.wikipedia.org/wiki/Drawdown_(economics)">Max Drawdown</a> - Highest to lowest point since inception</li>
+<li>Low <a href="https://en.wikipedia.org/wiki/Volatility_(finance)">Volatility</a> - Degree of variation in returns</li>
+<li>Low <a href="https://en.wikipedia.org/wiki/Beta_(finance)">Beta</a> - Exposure to general market movements</li>
+<li>Low <a href="https://en.wikipedia.org/wiki/Kurtosis">Kurtois</a> - "Peakedness" of returns vs Normal Distribution (High = Fat tails</li>
+<li>Positive <a href="https://en.wikipedia.org/wiki/Skewness">Skew</a> - "Skewdness" of returns vs Normal Distribution</li>
 </ul>
+<p>The explicit valuations depend entirely on circumstances such as strategy being tested, the current market regime it is tested over, and the slippage or market impact models being implemented. However one is able to compare apples to apples when looking at the same algorithms's strategies in various combinations over the same periods.</p>
+<p>Please note: the securities / ETF's chosen to trade are simply for illustrative purpose, no thought has gone into what pair of stocks to trade, it has simply been taken from wikipedia.</p>
+<hr>
+<p><strong>Dynamic Rebalancing</strong></p>
+<p>A dynamic monthly rebalancing has been implemented for the first two strategies in this algorithm, the frequency was chosen after reviewing the peformance. This is based closely on the Kelly Criterion, looking at the covariance of returns, see more <a href="https://www.quantstart.com/articles/Money-Management-via-the-Kelly-Criterion">here</a>.</p>
+<p>In the backtests I compare the peformance of the strategies with and without this dynamic rebalancing. There has been no independent leverage control implemente which could theoretically (and should in practice) force a strategy to zero leverage if it consistently underperforms. This is something I hope to implement in my next project, along with fixing two potential problems, which I cover below.</p>
+<hr>
+<p><strong>Known Issues</strong></p>
+<ul>
+<li>Initial investigation presents the potential issue that the daily returns may be being incorrectly calculated for the strategies which hold some positions over night. </li>
+<li>Leverage control ensures the algorithm does not exceed a leverage of 1.05, however on three occasions over 8 years this leverage is excedeeded momentarily, I believe this is a bug in the timing of orders vs leverage calculation.</li>
+</ul>
+<p>Although both these issues arguably have little affect to my performance it is of the upmost importance that quantitatively driven strategies have failsafe watertight architecture that <strong>does not have bugs</strong>. Flaws in the programming present the greatest danger to quantiatively driven models.</p>
+<hr>
+<p><strong>Transaction Costs &amp; Slippage</strong></p>
+<ul>
+<li>Applicable fees can be found <a href="https://www.interactivebrokers.com/en/index.php?f=commission&amp;p=stocks1&amp;ns=T">here</a>, the minimum order charge is 1 USD per order and 0.005 USD per share for fixed tier pricing</li>
+<li>Slippage model implemented can be read about <a href="https://www.quantopian.com/help#ide-slippage">here</a></li>
+</ul>
+<p>In both cases the actual algorithm contains more conservative parameters for costs and slippage (per share costs is 200% above fixed rate), in order to create a realistic performance in live foward test with funding.</p>
 
 </div>
 </div>
