@@ -29,7 +29,7 @@
 
 ### >> All Weather V1 - Trading Algorithm 
 * Click [here](https://mw572.github.io/All Weather V1/Parameter Optimisation - All Weather V1 Pairs Trade - 2007 - 2010 - Final.html) for a link to an example parameter optimisation, [full repo](https://github.com/ArtificialInvestor/algo-optimisation).
-* Click [here](http://mw572.github.io/All%20Weather%20V1/All%20Weather%20V1%20Brief%20Analysis/All_Weather_V1_Brief_Analysis.html) for a link to the brief writeup (without backtest output).
+* Click [here](https://mw572.github.io/All Weather V1/All_Weather_V1_Brief_Analysis.html) for a link to the brief writeup (without backtest output).
 * Click [here](https://mw572.github.io/All Weather V1/All_Weather_V1_Full_Analysis.html) for a link to the **full** writeup, [full repo](https://github.com/ArtificialInvestor/portfolio-algos/tree/master/All%20Weather%20V1).
 
 
