@@ -7,7 +7,7 @@
 
 The strategies in this analysis were previously optimised, please find the supplementary optimisation Notebooks [here](https://github.com/ArtificialInvestor/algo-optimisation/tree/master/All%20Weather%20V1).
 
-Analysis has been trimmed for brevity, please find the full piece including all details and figurs from backtesting [here](https://mw572.github.io/All%20Weather%20V1/All%20Weather%20V1%20Full%20Analysis.html)
+Analysis has been trimmed for brevity, please find the full piece including all details and figures from backtesting [here](https://mw572.github.io/All%20Weather%20V1/All%20Weather%20V1%20Full%20Analysis.html)
 
 ##### Format:
 
